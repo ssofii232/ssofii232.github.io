@@ -1,14 +1,117 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="id">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello,World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio | Sopi - Manajemen Perkantoran</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
-  <h1>
-    Hello, nama saya sopi
-  </h1>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-xl font-bold text-blue-600 tracking-wide">SOPI.PORTFOLIO</h1>
+            <div class="space-x-6 hidden md:block">
+                <a href="#tentang" class="hover:text-blue-500 transition">Tentang</a>
+                <a href="#keterampilan" class="hover:text-blue-500 transition">Keterampilan</a>
+                <a href="#kontak" class="hover:text-blue-500 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white py-16">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
+                <h2 class="text-blue-600 font-semibold uppercase tracking-widest mb-2">Halo, Saya</h2>
+                <h1 class="text-5xl font-extrabold text-gray-900 mb-4">SOPI</h1>
+                <p class="text-xl text-gray-600 mb-6 italic">Siswa Manajemen Perkantoran di SMK Al-Irsyad Al-Islamiyah Haurgeulis</p>
+                <div class="flex justify-center md:justify-start gap-4">
+                    <a href="#kontak" class="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition shadow-lg">Hubungi Saya</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-blue-500 rounded-full blur opacity-25"></div>
+                    <img src="foto-sopi.jpg" alt="Sopi" class="relative w-64 h-64 object-cover rounded-full border-4 border-white shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="tentang" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">Tentang Saya</h2>
+                <p class="text-lg leading-relaxed text-gray-700">
+                    "Saya adalah siswa SMK jurusan **Manajemen Perkantoran** yang memiliki minat besar dalam administrasi, pengarsipan, dan layanan pelanggan. Saya terbiasa menggunakan perangkat lunak perkantoran dan memiliki ketelitian tinggi dalam mengelola dokumen."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="keterampilan" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Keterampilan Utama</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition border-t-4 border-blue-500">
+                    <i class="fas fa-envelope-open-text text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Korespondensi Bisnis</h3>
+                    <p class="text-gray-600">Mampu menyurat dan membuat dokumen resmi seperti surat masuk dan keluar secara profesional.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition border-t-4 border-blue-500">
+                    <i class="fas fa-folder-tree text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Pengarsipan (Filing)</h3>
+                    <p class="text-gray-600">Memahami sistem kearsipan baik digital maupun fisik untuk kerapihan data kantor.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition border-t-4 border-blue-500">
+                    <i class="fas fa-laptop-code text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Aplikasi Perkantoran</h3>
+                    <p class="text-gray-600">Ahli menggunakan Microsoft Office (Word, Excel, PowerPoint) dan Google Workspace.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition border-t-4 border-blue-500">
+                    <i class="fas fa-calendar-check text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Manajemen Rapat</h3>
+                    <p class="text-gray-600">Mampu mengatur jadwal agenda pimpinan dan membuat notula rapat dengan akurat.</p>
+                </div>
+
+                <div class="p-6 bg-gray-50 rounded-xl hover:shadow-xl transition border-t-4 border-blue-500">
+                    <i class="fas fa-headset text-3xl text-blue-500 mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Komunikasi</h3>
+                    <p class="text-gray-600">Terampil dalam layanan telepon dan menerima tamu secara profesional (Front Office).</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="kontak" class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Hubungi Saya</h2>
+                    <p class="text-gray-400 mb-8">Saya terbuka untuk peluang magang atau kerja sama di bidang administrasi perkantoran.</p>
+                    <div class="space-y-4">
+                        <p class="flex items-center gap-3"><i class="fas fa-phone text-blue-400"></i> 083862224389</p>
+                        <p class="flex items-center gap-3"><i class="fas fa-envelope text-blue-400"></i> ssoffi232@gmail.com</p>
+                        <p class="flex items-center gap-3"><i class="fas fa-location-dot text-blue-400"></i> Anjatan, Kab. Indramayu</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg text-center">
+                    <h3 class="text-xl font-semibold mb-4">Pendidikan</h3>
+                    <p class="text-blue-400 font-bold">SMK Al-Irsyad Al-Islamiyah Haurgeulis</p>
+                    <p class="text-gray-300">Jurusan Manajemen Perkantoran</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2024 Sopi. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
-  
